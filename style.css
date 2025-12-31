@@ -1,0 +1,308 @@
+/* common css */
+
+* {
+    /* used to prevent outside padding */
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+.container {
+    max-width: 1280px;
+    margin: auto;
+}
+
+.panda-btn {
+    border-radius: 6px;
+    background: var(--Linear, linear-gradient(180.00deg, rgba(255, 88, 155, 1), rgba(255, 19, 111, 1) 100%));
+    padding: 15px 35px;
+    border: none;
+    color: white;
+    font-weight: 500;
+}
+
+.common-section-title {
+    font-weight: 600;
+    font-size: 36px;
+}
+
+
+/* custom css */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+
+.search-parent {
+    position: relative;
+
+    /* position relative makes the element float (not in that sense) */
+}
+
+.search-parent input {
+
+    background: rgba(241, 241, 241, 1);
+    border-radius: 66px;
+    padding: 15px 30px;
+    width: 500px;
+
+    border: none;
+    /* height: 48px; */
+
+}
+
+/* i is the icon tag to capture the search icon from font awesome */
+.search-parent i {
+
+
+    position: absolute;
+
+    top: 17px;
+
+    right: 20px;
+
+    color: #BABABA;
+
+
+
+    /* position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; */
+
+
+
+
+}
+
+
+.nav-items {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+.nav-items li a {
+    text-decoration: none;
+    color: rgba(112, 112, 112, 1);
+    font-weight: 600;
+    font-size: 16px;
+
+}
+
+
+/* banner */
+
+
+.banner {
+
+    background: rgba(254, 234, 233, 1);
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    /* margin: auto; */
+    align-items: center;
+    padding: 28px;
+    border-radius: 10px;
+    margin-top: 25px;
+
+}
+
+.banner img {
+
+    width: 402px;
+    height: 378px;
+}
+
+.banner h2 {
+    color: rgba(31, 31, 31, 1);
+
+    font-family: Poppins;
+
+    font-size: 52px;
+    font-weight: 700;
+
+
+
+}
+
+.banner p {
+    color: rgba(78, 78, 78, 1);
+    max-width: 456px;
+
+}
+
+.banner-price {
+    color: rgba(255, 19, 111, 1);
+    font-weight: bold;
+    font-size: 52px;
+    margin-bottom: 32px;
+    display: block;
+    margin-bottom: 0;
+}
+
+
+/* category section */
+
+
+.categories {
+    /* margin: 64px 0; */
+    padding: 10px 0;
+
+}
+
+
+.categories-card-container {
+    display: flex;
+
+    gap: 26px;
+
+    width: 100%;
+
+
+}
+
+.category-card {
+
+    display: flex;
+    justify-content: space-between;
+    gap: 4px;
+    align-items: center;
+    padding: 20px;
+    /* margin: 10px; */
+    border-radius: 10px;
+    flex: 1;
+    /* font-weight: normal; */
+    /* width: 33%; for equal distribution between 3 items */
+
+
+}
+
+.category-card h3 {
+    color: white;
+    font-weight: bold;
+    font-size: 36px;
+
+}
+
+.category-card:nth-child(1) {
+    background: linear-gradient(151.85deg, rgba(255, 156, 53, 1), rgba(255, 208, 25, 1) 100%);
+}
+
+.category-card:nth-child(2) {
+
+    background: var(--Linear, linear-gradient(180.00deg, rgba(255, 88, 155, 1), rgba(255, 19, 111, 1) 100%));
+
+}
+
+.category-card:nth-child(3) {
+    background: linear-gradient(170.38deg, rgba(66, 137, 255, 1), rgba(63, 7, 248, 1) 100%);
+
+}
+
+
+/* shoes and backpack section */
+
+
+.shoes-backpack-parent {
+
+    background: rgba(244, 244, 244, 1);
+
+}
+
+
+.shoes-backback-section-title-parent {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shoes-backback-section-title-parent h2 {
+    font-weight: bold;
+    font-size: 36px;
+}
+
+
+.shoes-backback-section-title-parent p {
+    font-size: 20px;
+    color: #ff9d00;
+
+}
+
+/* shoes section  */
+
+.shoes-section {
+    background: rgba(244, 244, 244, 1);
+    padding: 50px 0;
+
+
+}
+
+.shoe-card-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.shoe-card img {
+    width: 336px;
+    height: 202px;
+
+}
+
+.card-price {
+    /* turns inline element into block element  */
+    display: block;
+
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 12px;
+
+}
+
+.shoe-card {
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    text-align: center;
+    padding: 25px;
+}
+
+
+.shoe-card .panda-btn {
+    background: black;
+}
+
+/* contact section  */
+
+.contact-us-parent {
+
+    background: rgba(254, 234, 233, 1);
+    text-align: center;
+    padding: 30px 25px;
+    margin: 35px auto;
+    border-radius: 15px;
+
+
+
+
+
+}
+
+.contact-inp-btn-parent input {
+    border: none;
+    padding: 15px 152px;
+
+}
+
+.contact-inp-btn-parent {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-inp-btn-parent .panda-btn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
