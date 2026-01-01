@@ -42,6 +42,41 @@ nav {
     /* position relative makes the element float (not in that sense) */
 }
 
+.product-li {
+    position: relative;
+}
+
+.dropdown-nav-items {
+    position: absolute;
+    top: 30%;
+    left: -50%;
+    padding: 5px 10px;
+    list-style: none;
+    width: 150px;
+    background-color: white;
+    border-radius: 0 0 15px 15px;
+    text-align: center;
+    box-shadow: 2px 0px 8px 0px rgb(0 0 0 / 15%);
+
+    visibility: hidden;
+
+    
+
+
+}
+
+.product-li:hover .dropdown-nav-items {
+    visibility: visible;
+    top: 100%;
+    transition: 0.5s;
+}
+
+
+
+.dropdown-nav-items li {
+    margin: 5px 0px;
+}
+
 .search-parent input {
 
     background: rgba(241, 241, 241, 1);
@@ -268,6 +303,7 @@ nav {
     border-radius: 10px;
     text-align: center;
     padding: 25px;
+    box-shadow: 2px 0px 8px 0px rgb(0 0 0 / 15%);
 }
 
 
